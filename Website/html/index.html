@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div class="navigationbar">
+            <div class="container">
+                <a class="logo" href="#">SHUT<span>UP</span></a>
+
+                <img id="mobile-cta" class ="mobile-menu-dropdown"
+                src="../Website Pictures/menu.png"
+                alt="Shows The Navigation Bar On Mobile When Pressed"
+                width="20"
+                height="20">
+
+                <nav>
+
+                    <img id="mobile-exit" class="mobile-exit-menu"
+                    src="../Website Pictures/arrowmove.png"
+                    alt="Exits The Navigation Dropdown In Mobile"
+                    width="20"
+                    height="20">
+
+                    <ul class="main-navigation">
+                        <li class="current"><a href="#">HOME</a></li>
+                        <li><a href="#">A Random Place</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+
+                    <ul class="not-main-nav">
+                        <li><a href="#">Contact</a></li>
+                        <li class="shiny-btn"><a href="#"><span>A SHINY BUTTON</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="intro-block">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subheading">THIS IS THE HEADLINE &AMP; THE FIRST PARTS</p>
+                    <h1>A Website that isn't that <span>BAD</span></h1>
+
+                    <div class="intro-block-cta">
+                        <a href="https://animepahe.com/" class="watch-anime-cta">
+                            <img src="../Website Pictures/arrowmove.png" alt="go to animepahe" width="20" height="20">Go To AnimePahe
+                        </a>
+
+                        <a href="https://www.youtube.com/" class="watch-youtubevideo-cta">
+                            <img src="../Website Pictures/arrowmove.png" alt="go to youtube" width="20" height="20">Go To Youtube
+                        </a>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <img class="right-col-img" src="../Website Pictures/Website Background.png" alt="my background image" ><h3>This is what i wanted to use as my Background</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h1 class="features-heading">FEATURES</h1>
+                <ul class="features-list">
+                    <li>Nothing</li>
+                    <li>Also Nothing</li>
+                    <li>Nothing</li>
+                    <li>Nothing</li>
+                    <li>Nothing</li>
+                    <li>Nothing as well</li>
+                    <li>Nothing</li>
+                    <li>Nothing</li>
+                    <li>Nothing</li>
+                    <li>Well, i don't know what to put here</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-person">
+            <div class="container">
+                <div class="hobby">
+                    <h2>Your Hobbies</h2>
+                    <form action="">
+                        <label for="Name">Your Name</label>
+                        <input type="text" id="Name" name="Name">
+
+                        <label for="hobby name">Hobby</label>
+                        <input type="text" id="hobby name" name="hobby name">
+
+                        <label for="About person">About Yourself</label>
+                        <textarea name="About person" id="About Person" rows="10" cols="40"></textarea>
+
+                        <input type="submit" class="Submit-info-cta" value="SUBMIT STUFF">
+                    </form>
+                </div>
+            </div>
+            <div class="container-vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cbprfcSVcyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <script>
+            const menudropdownbutton = document.getElementById('mobile-cta')
+                    nav = document.querySelector("nav")
+                    menuexitbutton = document.getElementById('mobile-exit');
+
+            menudropdownbutton.addEventListener('click', () => {nav.classList.add('mobile-menu-dropdown');})
+            menuexitbutton.addEventListener('click', () => {nav.classList.remove('mobile-menu-dropdown');})
+        </script>
+
+    </body>
+</html>

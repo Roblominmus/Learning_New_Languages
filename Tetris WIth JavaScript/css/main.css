@@ -1,0 +1,20 @@
+.body {
+  background-color: rgb(8, 8, 66);
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(26, 10, 56);
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.blocks {
+  background-color: rgb(212, 250, 0);
+}/*# sourceMappingURL=main.css.map */
