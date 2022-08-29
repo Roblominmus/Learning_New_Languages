@@ -76,4 +76,26 @@ document.addEventListener('DOMContentLoaded', () => {
             squares[positon + index].classList.remove('blocks')
         })
     }
+
+    //Set interval is basically like a coroutine's 'waitforseconds'
+    //the integer  that is passed into the set interval is counted in milliseconds
+    timerId = setInterval(MoveDown, 1000)
+
+    function MoveDown(){
+        Erase()
+        positon += width
+        Draw()
+        StopMovingDown()
+    }
+
+    function StopMovingDown(){
+        if(block.some(index => squares[positon + index + width].classList.contains('taken'))){
+            block.forEach(index => squares[positon + index].classList.add('taken'))
+            random = Math.floor(Math.random() * Blocks.length)
+            block = Blocks[random][0]
+            positon = 4
+            Draw()
+        } 
+    }
+
 })

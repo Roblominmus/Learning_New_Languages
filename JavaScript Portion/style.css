@@ -1,0 +1,25 @@
+.body {
+  background-color: rgba(230, 245, 248, 0.699);
+}
+
+#num {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+
+.incrementbtn {
+  padding-inline: 10mm;
+}
+
+#password {
+  display: block;
+  text-align: center;
+}
+
+#genpassbtn {
+  display: block;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  align-self: center;
+}/*# sourceMappingURL=style.css.map */
