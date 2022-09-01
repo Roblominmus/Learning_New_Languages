@@ -8,28 +8,47 @@
     <title>Document</title>
 </head>
 <body class = "body">
-    <h1>This is a quick test</h1>
 
     <p id = "line1"></p>
     <p id = "line12"></p>
     <p id = "line13"></p>
     <p id = "line14"></p>
 
+    <h1>AGE COLLECTOR</h1>
     <p id="ageline">What Is Your Age?</p>
     <input type="number" id="myage"><br>
     <button type="button" id="agebutton">Submit</button>
 
+    <br><h1>NAME COLLECTOR</h1>
     <p id="nameline">Input A Name</p>
     <input type="text" id="myname"><br>
     <button type="button" id="namebutton">Submit</button><br>
 
+    <br><h1>MANUAL COUNTER</h1>
     <label id="num">0</label><br>
     <button class="incrementbtn" id="decreasebtn">DECREASE</button>
     <button class="incrementbtn" id="resetbtn">RESET</button>
     <button class="incrementbtn" id="increasebtn">INCREASE</button><br>
 
+    <br><h1>DICE ROLLER</h1>
+    <br><label for="dienumber">How many die do you want to roll?</label>
+    <br><input type="number" id="dienumber">
+    <br><label  id="die">*</label><br>
+    <button class='singularbtn' id="rollbtn">Roll</button>
+
+    <br><h1>PASSWORD GENERATOR</h1>
+    <br><label for="pwd">How Many Characters Do You Need For This Password?</label>
+    <br><input type="number" id="pwd"><br>
+    <input type="checkbox" id="hasnumbers">
+    <label for="hasnumbers">Has Numbers</label>
     <h1 id="password">*********</h1>
-    <button id="genpassbtn">Generate Password</button>
+    <button class='singularbtn' id="genpassbtn">Generate Password</button><br>
+
+    <h1>List Maker</h1>
+    <input type="text" id="iteminput">
+    <button id="additem">Add Item</button>
+    <h2>List Items:</h2>
+    <h3 id="list"></h3>
 
     <script src="index.js"></script>
 </body>

@@ -9,7 +9,9 @@
 }
 
 .incrementbtn{
-    padding-inline: 10mm;
+    display: inline-flex;
+    padding-inline: 9mm;
+    align-items: stretch;
 }
 
 #password{
@@ -17,9 +19,26 @@
     text-align: center;
 }
 
-#genpassbtn{
+.singularbtn{
     display: block;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    text-align: center;
+    padding-inline: 10mm;
     align-self: center;
+}
+
+#die{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+
+#clicker{
+    display: block;
+    text-overflow: clip;
+    padding: 5cm;
+}
+
+.span{
+    font-size: large;
+    color: blue;
 }

@@ -1,0 +1,15 @@
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\bin\Debug\net7.0\C# Portion.exe
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\bin\Debug\net7.0\C# Portion.deps.json
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\bin\Debug\net7.0\C# Portion.runtimeconfig.json
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\bin\Debug\net7.0\C# Portion.dll
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\bin\Debug\net7.0\C# Portion.pdb
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.AssemblyInfo.cs
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.dll
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\refint\C# Portion.dll
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.pdb
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\C# Portion.genruntimeconfig.cache
+C:\Users\LENOVO\Documents\GitHub\Learning_New_Languages\C# Portion\obj\Debug\net7.0\ref\C# Portion.dll

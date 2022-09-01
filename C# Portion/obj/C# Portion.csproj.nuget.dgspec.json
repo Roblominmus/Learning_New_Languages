@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# stuff\\app\\app.csproj": {}
+    "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# Portion\\C# Portion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# stuff\\app\\app.csproj": {
+    "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# Portion\\C# Portion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# stuff\\app\\app.csproj",
-        "projectName": "app",
-        "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# stuff\\app\\app.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# Portion\\C# Portion.csproj",
+        "projectName": "C# Portion",
+        "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# Portion\\C# Portion.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# stuff\\app\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\Learning_New_Languages\\C# Portion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

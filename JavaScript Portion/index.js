@@ -1,6 +1,6 @@
 
 //He taught a lot of other stuff but i feel like when i need them i will know what to do so i didn't bother adding it
-//I Learn All Of This From 'BRO CODE' :) Go Subscribe To Become A Fellow Bro ;)
+//I Learnt All Of This From 'BRO CODE' :) Go Subscribe To Become A Fellow Bro ;)
 
 
 
@@ -32,9 +32,8 @@ function VariablesLearning(){
     console.log("Had Age? : ", !age)
 }
 function UserInputLearning(){
-    //Easy way
-    //Window prompt
     //EasyWay()
+    //Window prompt
     ///Harder But Normal Way
     //Referencing from an input field in the html file
     HarderWay()
@@ -110,36 +109,108 @@ function ChangeNumber(){
         document.getElementById('num').innerHTML = num
     }
 }
+function RollDice(){
+    document.getElementById('rollbtn').onclick = function(){
+        if(document.getElementById('dienumber').value != 0){
+            let die = []
+            let done = Math.abs(document.getElementById('dienumber').value)
+            while(done > 0){
+                let dievalue = Math.floor(Math.random()*6) + 1
+                die.push(dievalue)
+                done--
+            }
+            let dog = die.toString().replaceAll(',',' ')
+            document.getElementById('die').innerHTML = dog
+        }else{
+        document.getElementById('die').innerHTML = 'Please Input A Value'
+        }
+    }
+}
+
+//These are some programs i decided to make after learning the basics of JavaScript
 function GeneratePassword(){
+
+    let letters = 'abcdefghijklmnopqrstuvwxyz'
+    let numbers = '0123456789'
     document.getElementById('genpassbtn').onclick = function(){
-        let pass
-        pass = "gfvfs"
-        document.getElementById('password').innerHTML = pass
+        let pass = []
+        let done = Number(document.getElementById('pwd').value)
+        let hasnum = document.getElementById('hasnumbers').checked
+        //This makes sure that the amount of characters that should be generated is not 0b
+        if(done != 0){
+            for(done; done > 0; done--){
+                let g = Math.round(Math.random()) + 1
+                //If you want to use a switchstatement to evaluate conditions
+                //You pass in 'true' as the argument
+                switch(true){
+                    case(g == 1):
+                        let c = Math.floor(Math.random() * (letters.length - 1))
+                        let a = letters.charAt(c)
+                        console.log(a)
+                        pass.push(a)
+                        break;
+                    case(g==2 && hasnum):
+                        let b = Math.floor(Math.random() * (numbers.length - 1))
+                        let j = numbers.charAt(b)
+                        console.log(j)
+                        pass.push(j)
+                        break;
+                    case(g==2 && !hasnum):
+                        done+=1
+                        break;
+                    default:
+                        console.log("Bro What The Hell Is Going On Here?");
+                }
+            }
+            document.getElementById('password').innerHTML = String(pass).replaceAll(',','')
+        }
+        else{
+            document.getElementById('password').innerHTML = 'Insert A Number'
+        }
+    }
+}
+function ListMaker(){
+    let list = []
+    document.getElementById('iteminput').onclick = function(){
+        document.getElementById('iteminput').value = ''
+    }
+    document.getElementById('additem').onclick = function(){
+        list.push(document.getElementById('iteminput').value)
+        let j = document.getElementById('iteminput').value
+        document.getElementById('list').innerHTML += "<input type='checkbox' id='checklist'>"
+        document.getElementById('list').innerHTML += j
+        document.getElementById('list').innerHTML += '<br>'
     }
 }
 
 //These are the subfunctions
 function EasyWay(){
     let name = window.prompt('What is your name?')
-if(name == ''){
-    console.log('Please Refresh And Input A Name')
-    document.getElementById("nameline").innerHTML = 'Please Refresh And Input A Name'
-}else{console.log('Is this your name? : ' + name)
-    document.getElementById("nameline").innerHTML = 'Is this your name? : ' + name}
+    if(name == ''){
+        console.log('Please Refresh And Input A Name')
+        document.getElementById("nameline").innerHTML = 'Please Refresh And Input A Name'
+    }else{console.log('Is this your name? : ' + name)
+        document.getElementById("nameline").innerHTML = 'Is this your name? : ' + name}
 }
 function HarderWay(){
-    let name
-    document.getElementById('button').onclick = function(){
-    name = document.getElementById('myname').value
-    console.log('Is this your name? : ' + name)
-    document.getElementById("nameline").innerHTML = 'Hello ' +name
-}
+    document.getElementById('namebutton').onclick = function(){
+        let name = document.getElementById('myname').value
+        console.log('Is this your name? : ' + name)
+        document.getElementById("nameline").innerHTML = 'Hello ' +name
+    }
+    document.getElementById('agebutton').onclick = function(){
+        let age = String(document.getElementById('myage').value)
+        console.log('Is your age : ' + age)
+        document.getElementById("ageline").innerHTML = 'Your Age Is ' +age
+    }
 }
 
 //These Are The Important Functions, not Sub-Functions, that will do something when called
 //VariablesLearning()
-//UserInputLearning()
+UserInputLearning()
 //TypeConversion()
 //JavaScriptMaths()
-//ChangeNumber()
+ChangeNumber()
+RollDice()
 GeneratePassword()
+ListMaker()
