@@ -1,4 +1,3 @@
-
 //He taught a lot of other stuff but i feel like when i need them i will know what to do so i didn't bother adding it
 //I Learnt All Of This From 'BRO CODE' :) Go Subscribe To Become A Fellow Bro ;)
 
@@ -132,40 +131,67 @@ function GeneratePassword(){
 
     let letters = 'abcdefghijklmnopqrstuvwxyz'
     let numbers = '0123456789'
+    let uletters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let symbols = '!@#$%^&*_+=-\|;.,/'
     document.getElementById('genpassbtn').onclick = function(){
         let pass = []
         let done = Number(document.getElementById('pwd').value)
         let hasnum = document.getElementById('hasnumbers').checked
-        //This makes sure that the amount of characters that should be generated is not 0b
-        if(done != 0){
-            for(done; done > 0; done--){
-                let g = Math.round(Math.random()) + 1
-                //If you want to use a switchstatement to evaluate conditions
-                //You pass in 'true' as the argument
-                switch(true){
-                    case(g == 1):
-                        let c = Math.floor(Math.random() * (letters.length - 1))
-                        let a = letters.charAt(c)
-                        console.log(a)
-                        pass.push(a)
-                        break;
-                    case(g==2 && hasnum):
-                        let b = Math.floor(Math.random() * (numbers.length - 1))
-                        let j = numbers.charAt(b)
-                        console.log(j)
-                        pass.push(j)
-                        break;
-                    case(g==2 && !hasnum):
-                        done+=1
-                        break;
-                    default:
-                        console.log("Bro What The Hell Is Going On Here?");
+        let hasupalph = document.getElementById('hasupalph').checked
+        let haslowalph = document.getElementById('haslowalph').checked
+        let hassymbols = document.getElementById('hassymbols').checked
+        if(hasnum || hasupalph || haslowalph || hassymbols){
+            //This makes sure that the amount of characters that should be generated is not 0b
+            if(done != 0){
+                for(done; done > 0; done--){
+                    let g = Math.round(Math.random() * 3) + 1
+                    //If you want to use a switchstatement to evaluate conditions
+                    //You pass in 'true' as the argument
+                    switch(true){
+                        case(g == 1):
+                            if(haslowalph){
+                                let c = Math.floor(Math.random() * (letters.length - 1))
+                                let a = letters.charAt(c)
+                                console.log(a)
+                                pass.push(a)
+                            }else{done++}
+                            break
+                        case(g==2):
+                            if(hasnum){
+                                let b = Math.floor(Math.random() * (numbers.length - 1))
+                                let j = numbers.charAt(b)
+                                console.log(j)
+                                pass.push(j)
+                            }else{done++}
+                            break
+                        case(g==3):
+                            if(hasupalph){
+                                let f = Math.floor(Math.random() * (--uletters.length))
+                                let k = uletters.charAt(f)
+                                console.log(k)
+                                pass.push(k)
+                            }else{done++}
+                            break
+                        case(g==4):
+                            if(hassymbols){
+                                let r = Math.floor(Math.random() * (--symbols.length))
+                                let y = symbols.charAt(r)
+                                console.log(y)
+                                pass.push(y)
+                            }else{done++}
+                            break
+                        default:
+                            console.log("Bro What The Hell Is Going On Here?");
+                    }
                 }
+                document.getElementById('password').innerHTML = String(pass).replaceAll(',','')
             }
-            document.getElementById('password').innerHTML = String(pass).replaceAll(',','')
-        }
-        else{
-            document.getElementById('password').innerHTML = 'Insert A Number'
+            else{
+                document.getElementById('password').innerHTML = 'Insert A Number'
+            }
+
+        }else{
+            document.getElementById('password').innerHTML = "Check A Box"
         }
     }
 }
@@ -195,8 +221,8 @@ function EasyWay(){
 function HarderWay(){
     document.getElementById('namebutton').onclick = function(){
         let name = document.getElementById('myname').value
-        console.log('Is this your name? : ' + name)
-        document.getElementById("nameline").innerHTML = 'Hello ' +name
+        console.log(`I see, so your name is ${name} , Good to know`)
+        document.getElementById("nameline").innerHTML = `Hello ${name} , How are you?` //I used Back Ticks Here
     }
     document.getElementById('agebutton').onclick = function(){
         let age = String(document.getElementById('myage').value)
