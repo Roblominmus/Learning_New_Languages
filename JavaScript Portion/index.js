@@ -208,6 +208,34 @@ function ListMaker(){
         document.getElementById('list').innerHTML += '<br>'
     }
 }
+function MonthAmountChecker(){
+    document.getElementById('checkamount').onclick = function(){
+        let month = document.getElementById('month').value
+        if(month =='september' || month =='april' ||month == 'june' ||month == 'november'){
+            document.getElementById('amt').innerHTML = `Amount : 30 days`
+        }
+        if(month =='january'||month =='march'||month =='may'||month =='july'||month =='august'||month =='october'||month =='december'){
+            document.getElementById('amt').innerHTML = `Amount : 31 days`
+        }
+        if(month=='february'){
+            document.getElementById('month2').innerHTML = `Amount : 28.25 days`
+        }
+    }
+    document.getElementById('monthbtn').onclick = function(){
+        let x = document.getElementById('month2num')
+        if(x==6||x==4||x==11||x==9){
+            document.getElementById('month2').innerHTML = `Amount : 30 days`
+        }
+        else if(x==1||x==3||x==5||x==7||x==8||x==10||x==12){
+            document.getElementById('month2').innerHTML = `Amount : 31 days`
+        }
+        else if(x==2){
+            document.getElementById('month2').innerHTML = `Amount : 28.25 days`
+        }else{
+            document.getElementById('month2').innerHTML = 'INPUT A VALID NUMBER'
+        }
+    }
+} 
 
 //These are the subfunctions
 function EasyWay(){
@@ -240,3 +268,4 @@ ChangeNumber()
 RollDice()
 GeneratePassword()
 ListMaker()
+MonthAmountChecker()

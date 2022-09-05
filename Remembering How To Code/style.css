@@ -1,0 +1,25 @@
+.hero {
+  display: block;
+  align-self: center;
+  align-content: center;
+  padding-left: 200px;
+  padding-top: 10px;
+}
+.hero .headertxt {
+  color: rgba(255, 187, 0, 0.685);
+}
+.hero .listadder {
+  background-color: rgba(0, 102, 255, 0.164);
+}
+
+.list {
+  color: white;
+  display: block;
+  align-content: center;
+  padding-left: 200px;
+  padding-top: 10px;
+}
+
+.body {
+  background-color: rgb(5, 58, 58);
+}/*# sourceMappingURL=style.css.map */
